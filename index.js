@@ -11,7 +11,7 @@ app.get("*", (req, res) => {
 });
 
 app.get("/api/ping", (req, res) => {
-  res.status(200).send("success");
+ return res.status(200).send("success");
 });
 
 app.listen(port, () => {
